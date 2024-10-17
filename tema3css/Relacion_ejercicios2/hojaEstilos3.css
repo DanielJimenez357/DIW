@@ -1,0 +1,17 @@
+body {
+    counter-reset: contador;
+}
+
+article {
+    counter-reset: contador2; 
+}
+
+h2::before {
+    counter-increment: contador;
+    content: "Parte " counter(contador) " - ";
+}
+
+h3::before {
+    counter-increment: contador2;       
+    content: counter(contador) "." counter(contador2) ") ";
+}

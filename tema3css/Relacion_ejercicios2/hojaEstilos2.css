@@ -1,0 +1,10 @@
+:target{
+    color: green;
+}
+:target::before{
+    content: "▶";
+}
+
+a:visited{
+    color: green;
+}

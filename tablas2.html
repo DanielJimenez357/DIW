@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td, tr {
+            border: solid black 1px
+        }
+        #tabla1 {
+            width: 50%;
+            height: 100px;
+        }
+        #tabla2, #tabla3, #tabla4, #tabla5{
+            width: 50%;
+            height: 80px;
+        }
+        #tabla3, #tabla4, #tabla5 {
+            width: 100%;
+            height: 100%;
+            
+        }
+        #tabla3 td, #tabla4 td, #tabla5 td {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table id = "tabla1">
+        <tr>
+            <td></td>
+            <td></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2"></td>
+            <td rowspan="2"></td>
+
+        </tr>
+        <tr>
+            <td rowspan="3"></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+
+        </tr>
+    </table>
+
+    <hr>
+
+    <table id ="tabla2">
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                    <table id = "tabla3">
+                    <tr>   
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>   
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <table id = "tabla4">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <table id ="tabla5">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

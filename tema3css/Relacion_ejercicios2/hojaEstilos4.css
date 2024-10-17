@@ -1,0 +1,14 @@
+body {
+    counter-reset: contador;
+}
+
+h2::before {
+    color: blue;
+    counter-increment: contador;
+    content: "Capítulo " counter(contador) ": ";
+    counter-reset: contador2;
+}
+h3::after {
+    counter-increment: contador2;
+    content: " - Subseccion " counter(contador) "." counter(contador2);
+}
