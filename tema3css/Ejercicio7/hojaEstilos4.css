@@ -1,0 +1,96 @@
+#imagenes div:nth-child(1) {
+    width: 300px;
+    height: 300px;
+    border-style:dashed;
+    border-color: red;
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+#imagenes div:nth-child(2) {
+    width: 300px;
+    height: 300px;
+    border-style:dashed;
+    border-color: red;
+    margin-bottom: 20px;
+    background-image: url("assets/puesta-sol.jpg");  
+}
+
+#imagenes div:nth-child(3) {
+    width: 300px;
+    height: 300px;
+    border-style:dashed;
+    border-color: red;
+    margin-bottom: 20px;
+    background-image: url("assets/puesta-sol.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+#imagenes div:nth-child(4) {
+    width: 300px;
+    height: 300px;
+    border-style:dashed;
+    border-color: red;
+    margin-bottom: 20px;
+    background-image: url("assets/puesta-sol.jpg");
+    background-size: 100px 50px;
+    background-repeat: no-repeat;
+}
+
+#imagenes div:nth-child(5) {
+    width: 300px;
+    height: 300px;
+    border-style:dashed;
+    border-color: red;
+    margin-bottom: 20px;
+    background-image: url("assets/puesta-sol.jpg");
+    background-size: 100px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: bottom;
+    background-color:aquamarine;
+}
+
+
+#imagenes div:nth-child(6) {
+    width: 300px;
+    height: 300px;
+    border-style:dashed;
+    border-color: red;
+    margin-bottom: 20px;
+    background-image: url("assets/puesta-sol.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 10px;
+}
+
+#imagenes div:nth-child(7) {
+    width: 300px;
+    height: 300px;
+    border-style:dashed;
+    border-color: red;
+    margin-bottom: 20px;
+    background-image: url("assets/puesta-sol.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: blue;
+}
+
+#imagenes div:nth-child(8) {
+    width: 300px;
+    height: 300px;
+    border-style:dashed;
+    border-color: red;
+    margin-bottom: 20px;
+    background-image: url("assets/puesta-sol.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 10px;
+}
