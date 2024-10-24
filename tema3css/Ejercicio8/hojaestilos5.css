@@ -1,0 +1,62 @@
+.contenedor {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+}
+
+.contenedor div {
+    height: 100px;
+    width: 200px;
+    line-height: 100px;
+    text-align: center;
+    background-color: beige;
+    margin-bottom: 20px;
+}
+
+.contenedor div:nth-child(1) {
+    box-shadow: -5px -5px 0px red;
+}
+
+.contenedor div:nth-child(2) {
+    box-shadow: -5px -5px 4px blue;
+}
+
+.contenedor div:nth-child(3) {
+    box-shadow: -7px -7px 0px 7px green;
+}
+
+.contenedor div:nth-child(4) {
+    box-shadow: -7px -7px 7px 8px lightblue;
+}
+
+.contenedor div:nth-child(5) {
+    box-shadow: -1px -1px 3px 1px fuchsia, 1px 1px 3px 1px fuchsia;
+}
+
+.contenedor div:nth-child(6) {
+    box-shadow: -1px -1px 7px 5px olive, 1px 1px 7px 5px olive;
+}
+
+.contenedor div:nth-child(7) {
+    box-shadow: 3px 3px 0px 3px purple;
+}
+
+.contenedor div:nth-child(8) {
+    box-shadow: -6px -6px 6px 0px purple inset;
+}
+
+.contenedor div:nth-child(9) {
+    box-shadow: -8px -8px 0px 3px salmon inset;
+}
+
+.contenedor div:nth-child(10) {
+    box-shadow: -8px -8px 8px 10px greenyellow inset;
+}
+
+.contenedor div:nth-child(11) {
+    box-shadow: -1px -1px 3px 0px darkblue inset, 1px 1px 3px 0px darkblue inset;
+}
+
+.contenedor div:nth-child(12) {
+    box-shadow: -1px -1px 5px 5px gray inset, 1px 1px 5px 5px gray inset;
+}
