@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 h1, h2{
     background-color: lightgray;
     color: orange;
@@ -12,11 +17,12 @@ h1, h2{
 }
 
 nav {
-    background-color: skyblue;
     width: 36%;
+    color: white;
 }
 
 nav li {
+    margin-left: -3px;
     display: inline-block;
     padding: 15px;
     padding-left: 80px;
@@ -28,6 +34,12 @@ nav li:hover{
     background-color: black;
     color: white;
 }
+
+nav li:nth-child(2):nth-child(3):nth-child(4) {
+    color: black;
+    background-color: black;
+}
+
 
 section li {
     text-align: center;
@@ -49,22 +61,29 @@ section li:hover {
 }
 
 footer {
-    position: static;
     margin-top: 20%;
+    padding: 40px;
     background-color: black;
 }
 
-footer p {
-    display: inline;
-    padding: 20px;
-}
-
-footer p:nth-child(1){
+footer a:nth-child(1){
     float: left;
-    color: blue;
+    color: rgb(0, 119, 255);
 }
 
-footer p:nth-child(2){
+footer a:nth-child(2){
     float: right;
-    color: blue;
+    color: rgb(0, 119, 255);
+}
+
+main div {
+    padding: 20px;
+    margin-left: 41%;
+    float: left;
+    width: 500px;
+    display: block;
+}
+
+main div img {
+    padding:  10px;
 }
