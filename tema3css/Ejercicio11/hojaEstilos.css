@@ -28,6 +28,7 @@ nav li {
     padding-left: 80px;
     padding-right: 80px;
     background-color: skyblue;
+    position: relative;
 }
 
 nav li:hover{
@@ -35,9 +36,26 @@ nav li:hover{
     color: white;
 }
 
-nav li:nth-child(2):nth-child(3):nth-child(4) {
-    color: black;
+nav > li:hover > ul > li {
     background-color: black;
+}
+
+nav > li > ul{
+    background-color: black;
+    display: none;
+    position: absolute;
+    width: 230px;
+    padding: 15px;
+    margin-left: -80px;
+}
+
+
+nav > li:hover > ul {
+    display: block;
+}
+
+nav > li > ul > li:hover {
+    background-color: orange;
 }
 
 
@@ -61,7 +79,7 @@ section li:hover {
 }
 
 footer {
-    margin-top: 20%;
+    margin-top: 30%;
     padding: 40px;
     background-color: black;
 }
@@ -76,13 +94,21 @@ footer a:nth-child(2){
     color: rgb(0, 119, 255);
 }
 
-main div {
+main > div {
+    width: 27%;
+    margin: auto;
+}
+
+
+main > div > div{
     padding: 20px;
-    margin-left: 41%;
+    float: right;
     float: left;
     width: 500px;
     display: block;
 }
+
+
 
 main div img {
     padding:  10px;
