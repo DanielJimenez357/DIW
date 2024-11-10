@@ -1,0 +1,211 @@
+* {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul > img {
+    float: inline-end;
+    vertical-align: middle;
+    background-color: aqua;
+    height: 105px;
+    margin-top: -30.5px;
+    border: 2px solid green;
+}
+
+nav {
+	padding: 30px;
+	background-color: beige;
+}
+
+nav > ul > li{
+	display:inline-block;
+    position: relative;
+    padding: 15px;
+}
+
+.nav1 {
+	color: white;
+    margin-right: -5px;
+	background-color: salmon;
+}
+
+.nav1:hover{
+    background-color: blueviolet;
+    color: black;
+}
+
+.nav2:hover{
+    background-color: blueviolet;
+}
+
+.nav4:hover {
+    background-color: blueviolet;
+}
+
+/* sub navegador 1 */
+.nav3sub1{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: greenyellow;
+}
+
+.nav3sub1:hover {
+    background-color: blueviolet;
+}
+
+.nav2:hover > .nav3sub1 {
+    display: block;
+}
+
+.nav3sub1 li {
+    width: 200px;
+}
+
+.nav3sub1 > li {
+    padding: 15px;
+}
+
+/*sub navegador 2 */
+
+.nav3sub2{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: greenyellow;
+}
+
+.nav3sub2 > li {
+    padding: 15px;
+}
+
+.nav3sub2 > li:hover {
+    background-color: blueviolet;
+}
+
+.nav3:hover > .nav3sub2{
+    display: block;
+}
+
+/*sub navegador 3*/
+
+.nav4sub1{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: greenyellow;
+}
+
+.nav4sub1 > li:hover {
+    background-color: blueviolet;
+}
+
+.nav4:hover > .nav4sub1 {
+    display: block;
+}
+
+.nav4sub1 li {
+    width: 200px;
+}
+
+.nav4sub1 > li {
+    padding: 15px;
+}
+.nav4sub2 > li {
+    padding: 15px;
+}
+
+
+/*sub navegador 4*/
+
+.nav4sub2{
+    display: none;
+    position: absolute;
+    top: 48px;
+    left: 100%;
+    background-color: greenyellow;
+}
+
+.nav4sub2 > li {
+    padding: 15px;
+}
+
+.nav4sub2 > li:hover {
+    background-color: blueviolet;
+}
+
+.nav6:hover > .nav4sub2{
+    display: block;
+}
+
+/*sub navegador 5 */
+
+.nav3subsub2{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: greenyellow;
+}
+
+.nav3subsub2 > li {
+    padding: 15px;
+}
+
+.nav3subsub2 > li:hover {
+    background-color: blueviolet;
+}
+
+.nav3subsub1:hover > .nav3subsub2{
+    display: block;
+}
+
+
+/*comienzo de main*/
+
+main {
+    margin-top: 350px;
+    z-index: -5;
+}
+
+.contenedor {
+    width: 100%;
+    height: 400px; 
+    background-image: url("https://picsum.photos/1000/400");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.texto {
+    font-size: 20px;
+}
+
+.destacado {
+    font-size: 15px;
+    background-color: orangered; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px; 
+}
+
+.relleno {
+    width: 1px;
+    color: white;
+}
