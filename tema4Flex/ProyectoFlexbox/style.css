@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Geologica;
+	color: white;
+	text-decoration: none;
+}
+
+/*Estilos generales */
+
+main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	background-image: linear-gradient(rgb(105, 102, 102), rgb(29, 26, 26));
+}
+
+/* Estilos de la ventana*/
+
+.ventana {
+    margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 35%;
+	height: 80%;
+	background-image: linear-gradient(
+		to bottom,
+		rgb(29, 26, 26),
+		rgb(95, 92, 92)
+	);
+}
+
+.ventana > img {
+	width: 60px;
+}
+
+.ventana > h1 {
+	margin: 30px;
+}
+
+.boton__sesion {
+	width: 250px;
+	text-align: left;
+	margin: 7px;
+	padding: 10px;
+	border: solid white 1px;
+	border-radius: 30px;
+	background-color: #212121;
+}
+
+.boton__sesion:hover {
+	background-color: #525151;
+}
+
+.linea {
+	margin: 30px;
+	width: 70%;
+	border-bottom: solid white 1px;
+}
+
+.label__input {
+	color: gray;
+	font-size: 10px;
+	width: 250px;
+	padding: 8px;
+	margin: 5px;
+	background-color: #212121;
+}
+
+.boton__inicio__sesion {
+	width: 240px;
+	text-align: center;
+	margin: 7px;
+	padding: 10px;
+	border-radius: 30px;
+	background-color: #21b125;
+}
+
+.boton__inicio__sesion:hover {
+	background-color: #48e94d;
+}
+
+.boton__inicio__sesion > a {
+	color: #212121;
+}
+
+.boton__sesion > img {
+	width: 18px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.ventana__footer {
+	margin: 20px;
+	width: 240px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 12px;
+}
+
+.ventana__footer > a {
+	text-decoration: underline;
+}
+
+.ventana__footer > p {
+	color: rgb(177, 175, 175);
+}
+
+.contraseña__olvidada {
+	text-decoration: underline;
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+.label {
+	font-size: 12px;
+}
+
+.label__input {
+	margin-bottom: 20px;
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    background-color: rgb(104, 102, 102);
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > p {
+    color: rgb(163, 156, 156);
+
+}
+
