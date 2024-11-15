@@ -4,64 +4,116 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="style_main.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap"
 			rel="stylesheet"
 		/>
-		<script
-			src="https://kit.fontawesome.com/445779bc82.js"
-			crossorigin="anonymous"
-		></script>
 	</head>
 	<body>
 		<main>
-			<div class="ventana">
-				<img src="assets/spotify.svg" />
-				<h1>Inicia sesion en Spotify</h1>
-				<div class="boton__sesion icon1">
-					<img src="assets/google.svg" /><a href="#">Continuar con Google</a>
-				</div>
-				<div class="boton__sesion icon2">
-					<img src="assets/facebook.svg" /><a href="#"
-						>Continuar con Facebook</a
-					>
-				</div>
-				<div class="boton__sesion icon3">
-					<img src="assets/apple-brands-solid.svg" /><a href="#"
-						>Continuar con Apple</a
-					>
-				</div>
-				<div class="linea"></div>
-				<label class="label">Correo electronico o nombre de usuario</label>
-				<input
-					class="label__input"
-					type="text"
-					value="Correo electrónico o nombre de usuario"
-				/>
-				<label class="label">Contraseña</label>
-				<input
-					class="label__input"
-					type="password"
-					value="Contraseña"
-					name="contraseña"
-				/>
-				<div class="boton__inicio__sesion"><a href="#">Iniciar sesion</a></div>
-				<a class="contraseña__olvidada" href="#"
-					>¿Se te ha olvidado la contraseña?</a
-				>
-				<div class="ventana__footer">
-					<p>¿No tienes cuenta?</p>
-					<a href="#">Sucribete a Spotify</a>
-				</div>
-			</div>
-            <div class="footer">
-                <p>
-                    Este sitio está protegio por reCPTCHA. Se aplican los Términos del
-                    servicio y la Política de privacidad de Google.
-                </p>
+			<div class="barraArriba">
+                <img src="assets/social.png">
+                <img src="assets/home.png">
+                <div class="barraArriba__busqueda">
+                    <img src="assets/lupa.png">
+                    <p>Texto de busqueda</p>
+                </div>
+                <div class="barraArriba__log-sign">
+                    <p>Sign up</p>
+                    <p>Log in</p>
+                </div>
+            </div>
+            <div class="medio">
+                <div class="medio__tuBiblioteca">
+                    <h3>Tu biblioteca</h3>
+                    <div class="medio__tuBiblioteca__crearLista">
+                        <h5>Crea tu primera lista</h5>
+                        <p>Es muy fácil, y te echaremos una mano</p>
+                        <p>Crear lista</p>
+                    </div>
+                    <div class="medio__tuBiblioteca__buscarPodcast">
+                        <h5>Encuentra podcast que quieras seguir</h5>
+                        <p>Es muy fácil, y te echaremos una mano</p>
+                        <p>Explorar podcast</p>
+                    </div>
+                    <div class="medio__tuBiblioteca__idioma">
+                        <img src="assets/world.png">
+                        <p>Idioma</p>
+                    </div>
+                </div>
+    
+                <div class="explorar">
+                    <div class="explorar__artistas">
+                        <div class="explorar__artistas__titulo">
+                            <h2>Artistas populares</h2>
+                            <h4>Mostrar todos</h4>
+                        </div>
+                        <div class="explorar__artistas__artistas">
+                            <div class="explorar__artistas__artistas__artista1">
+                                <div></div>
+                                <h4>Myke Towers</h4>
+                                <p>Artista</p>
+                            </div>
+                            <div class="explorar__artistas__artistas__artista2">
+                                <div></div>
+                                <h4>KAROL G</h4>
+                                <p>Artista</p>
+                            </div>
+                            <div class="explorar__artistas__artistas__artista4">
+                                <div></div>
+                                <h4>Rauw Alejandro</h4>
+                                <p>Artista</p>
+                            </div>
+                            <div class="explorar__artistas__artistas__artista5">
+                                <div></div>
+                                <h4>Shakira</h4>
+                                <p>Artista</p>
+                            </div>
+                            <div class="explorar__artistas__artistas__artista3">
+                                <div></div>
+                                <h4>Bad Bunny</h4>
+                                <p>Artista</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explorar__albumes">
+                        <div class="explorar__albumes__titulo">
+                            <h2>Artistas populares</h2>
+                            <h4>Mostrar todos</h4>
+                        </div>
+                        <div class="explorar__albumes__albumes">
+                            <div class="explorar__albumes__albumes__album1">
+                                <div></div>
+                                <h4>Ameri</h4>
+                                <p>Duki</p>
+                            </div>
+                            <div class="explorar__albumes__albumes__album2">
+                                <div></div>
+                                <h4>LA PANTERA NEGRA</h4>
+                                <p>Myke Towers</p>
+                            </div>
+                            <div class="explorar__albumes__albumes__album3">
+                                <div></div>
+                                <h4>Quién es Dei V?</h4>
+                                <p>Dei V</p>
+                            </div>
+                            <div class="explorar__albumes__albumes__album4">
+                                <div></div>
+                                <h4>SAKURA</h4>
+                                <p>SAIKO</p>
+                            </div>
+                            <div class="explorar__albumes__albumes__album5">
+                                <div></div>
+                                <h4>MAÑANA SERÁ BONITO</h4>
+                                <p>KAROL G</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
 		</main>
 	</body>
