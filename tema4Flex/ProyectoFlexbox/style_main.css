@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Geologica;
+	color: white;
+	text-decoration: none;
+}
+
+:root{
+    --color-primary: #212121;
+    --color-secundary: #727171;
+    --color-terciary: #999999;
+}
+
+body {
+    background-color: black;
+}
+
+/* Tamaño de las imagenes */
+.barraArriba > img:nth-child(1) {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+}
+.barraArriba > img:nth-child(2) {
+    width: 35px;
+    height: 35px;
+    background-color: var(--color-primary);
+    border-radius: 30px;
+    padding: 4px;
+}
+.barraArriba__busqueda > img:nth-child(1){
+    width: 40px;
+    height: 40px;
+}
+
+/* Barra de arriba */
+
+.barraArriba {
+    margin: 10px;
+    width: 98%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barraArriba__busqueda {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-primary);
+    border-radius: 22px;
+    height: 45px;
+    width: 40%;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.barraArriba__log-sign {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.barraArriba__log-sign > p:nth-child(2) {
+    background-color: white;
+    color: black;
+    padding: 13px 25px;
+    border-radius: 30px;
+}
+
+.barraArriba__log-sign > p:nth-child(1) {
+    color: var(--color-terciary);
+}
+
+/* Biblioteca*/
+
+.medio {
+    display: flex;
+}
+
+.medio__tuBiblioteca {
+    flex-direction: column;
+    background-color: var(--color-primary);
+    width: 26%;
+    height: 80%;
+    border-radius: 10px;
+    margin: 40px;
+    display: flex;
+}
+
+.medio__tuBiblioteca > h3 {
+    margin: 20px;
+    padding: 20px;
+    margin-left: 40px;
+}
+
+.medio__tuBiblioteca__crearLista {
+    background-color: var(--color-secundary);
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    height: 100px;
+}
+
+.medio__tuBiblioteca__crearLista :nth-child(2) {
+    font-size: 13px;
+    margin: 10px 0px;
+}
+
+
+.medio__tuBiblioteca__crearLista :nth-child(3){
+    background-color: white;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 0px;
+    border-radius: 30px;
+    color: black;
+    width: 100px;
+    text-align: center;
+}
+
+
+.medio__tuBiblioteca__buscarPodcast :nth-child(2) {
+    font-size: 13px;
+    margin: 10px 0px;
+}
+
+
+.medio__tuBiblioteca__buscarPodcast {
+    background-color: var(--color-secundary);
+    padding: 20px;
+    margin: 120px 30px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.medio__tuBiblioteca__buscarPodcast :nth-child(3){
+    background-color: white;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 0px;
+    border-radius: 30px;
+    color: black;
+    width: 140px;
+    text-align: center;
+}
+
+
+.medio__tuBiblioteca__idioma {
+    display: flex;
+    margin: 60px;
+    margin-top: 60px;
+    height: 40px;
+    width: 130px;
+    align-items: center;
+    border: solid white 1px;
+    border-radius: 30px;
+}
+
+.medio__tuBiblioteca__idioma > img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* Explorar */
+
+.explorar {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: var(--color-primary);
+    margin: 40px;
+    margin-left: 0;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Barra artistas*/
+.explorar__artistas {
+    width: 100%;
+}
+
+.explorar__artistas__titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 20px;
+}
+
+.explorar__artistas__artistas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.explorar__artistas__artistas__artista1 > div:nth-child(1) {
+    padding: 90px;
+    background-image: url("assets/artistas/artista1.png");
+    background-size: cover;
+    border-radius: 50%;
+    display: inline-block;
+}
+.explorar__artistas__artistas__artista2 > div:nth-child(1) {
+    padding: 90px;
+    background-image: url("assets/artistas/artista2.png");
+    background-size: cover;
+    border-radius: 50%;
+    display: inline-block;
+}
+.explorar__artistas__artistas__artista3 > div:nth-child(1) {
+    padding: 90px;
+    background-image: url("assets/artistas/artista3.png");
+    background-size: cover;
+    border-radius: 50%;
+    display: inline-block;
+}
+.explorar__artistas__artistas__artista5 > div:nth-child(1) {
+    padding: 90px;
+    background-image: url("assets/artistas/artista4.png");
+    background-size: cover;
+    border-radius: 50%;
+    display: inline-block;
+}
+.explorar__artistas__artistas__artista4 > div:nth-child(1) {
+    padding: 90px;
+    background-image: url("assets/artistas/artista5.png");
+    background-size: cover;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Barra albumes*/
+
+.explorar__albumes {
+    width: 100%;
+}
+
+.explorar__albumes__titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 20px;
+}
+
+.explorar__albumes__albumes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.explorar__albumes__albumes__album1 > div:nth-child(1) {
+    padding: 90px;
+    background-image: url("assets/albumes/album1.png");
+    background-size: cover;
+    border-radius: 10px;
+    display: inline-block;
+}
+.explorar__albumes__albumes__album2 > div:nth-child(1) {
+    padding: 90px;
+    background-image: url("assets/albumes/album2.png");
+    background-size: cover;
+    border-radius: 10px;
+    display: inline-block;
+}
+.explorar__albumes__albumes__album3 > div:nth-child(1) {
+    padding: 90px;
+    background-image: url("assets/albumes/album3.png");
+    background-size: cover;
+    border-radius: 10px;
+    display: inline-block;
+}
+.explorar__albumes__albumes__album4> div:nth-child(1) {
+    padding: 90px;
+    background-image: url("assets/albumes/album4.png");
+    background-size: cover;
+    border-radius: 10px;
+    display: inline-block;
+}
+.explorar__albumes__albumes__album5 > div:nth-child(1) {
+    padding: 90px;
+    background-image: url("assets/albumes/album5.png");
+    background-size: cover;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
