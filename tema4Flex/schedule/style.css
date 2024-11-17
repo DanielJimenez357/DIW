@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(214, 212, 212);
+}
+
+
+
+
+
+.schedule {
+    display: grid;
+    width: 1190px;
+    grid-template-rows: repeat(7, 120px);
+    grid-template-columns: repeat(7, 170px);
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+
+.schedule > h1 {
+    grid-column: span 7;
+    text-align: center;
+    border-bottom: solid gray 1px;
+}
+
+.schedule > p:nth-child(-n+8) {
+    border: none;
+    border-bottom: solid 1px gray;
+    text-align: center;
+}
+
+.schedule > p:nth-child(9) {
+    grid-column: 3;
+}
+
+.schedule > p {
+    padding: 20px;
+    border: solid 1px rgb(182, 172, 172);
+}
