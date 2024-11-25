@@ -1,0 +1,36 @@
+.contenedor{
+    width: 200px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 5px auto ;
+    text-align: center;
+}
+
+.contenedor > li{
+    list-style: none;
+    padding: 40px;
+    background-color: black;
+    color: white;
+}
+
+.contenedor > li:nth-child(1){
+    height: 10px;
+    background-color: yellow;
+    transition: height 1s ease;
+}
+.contenedor > li:nth-child(2){
+    height: 10px;
+    background-color: green;
+}
+.contenedor > li:nth-child(3){
+    height: 10px;
+    background-color: red;
+}
+.contenedor > li:nth-child(4){
+    height: 10px;
+    background-color: purple;
+}
+
+.contenedor > li:nth-child(5):hover ~ li:nth-child(5) {
+    height: 100px;
+}
