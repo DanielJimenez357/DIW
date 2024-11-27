@@ -24,7 +24,13 @@ form {
     padding: 30px;
 }
 
-form > h1::after {
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+h1::after {
     content: " ";
     display: block;
     border-bottom: 3px solid rgb(95, 59, 224);
@@ -33,18 +39,20 @@ form > h1::after {
     margin-top: 10px;
 }
 
-form > input {
+.grid > input {
     margin: 15px;
     height: 50px;
 }
 
-form > input::placeholder{
+.grid > input::placeholder{
     position: relative;
     left: 10px;
 }
 
-form > input:nth-child(4) {
-    height: 200px;   
+.area {
+    height: auto;
+    grid-row-start: 1;
+    grid-row-end: span 3;
 }
 form > input:nth-child(4)::placeholder {
     top: -80px;
