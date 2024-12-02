@@ -1,0 +1,82 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.arbol{
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+    width: 500px;
+    height: 500px;
+    background-color: rgb(26, 5, 59);
+}
+
+.manzana{
+    width: 20px;
+}
+
+.luna{
+    background-color: white;
+    clip-path: circle();
+}
+
+.estrella {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)
+}
+
+.estrella:nth-child(7){
+    grid-column: 4;
+}
+.estrella:nth-child(8){
+    grid-column: 8;
+    grid-row: 2;
+}
+.estrella:nth-child(9){
+    grid-column: 10;
+}
+
+.buho{
+    width: 40px;
+    grid-row: 3;
+    grid-column: 7;
+    transition: transform 1s;
+}
+
+.buho:hover{
+    transform: scale(1.5);
+}
+
+.manzana:nth-child(2){
+    grid-row: 4;
+    grid-column: 3;
+    animation: caida 5s 1s forwards;
+}
+.manzana:nth-child(3){
+    grid-row: 3;
+    grid-column: 5;
+    animation: caida 5s forwards;
+}
+.manzana:nth-child(4){
+    grid-row: 4;
+    grid-column: 8;
+    animation: caida 5s 2s forwards;
+}
+
+@keyframes caida {
+    0%{
+        transform: rotate(45deg);
+    }
+    25%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: translateY(300px);
+    }
+
+}
