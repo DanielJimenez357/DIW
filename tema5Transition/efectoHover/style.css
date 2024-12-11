@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor{
+    margin-left: 200px;
+    margin-top: 100px;
+    position: relative;
+    width: 252px;
+    height: 58px;
+    overflow: hidden;
+}
+
+.contenedor > div{
+    cursor: pointer;
+    width: 300px;
+    justify-content: flex-start;
+    display: flex;
+}
+
+
+.palabra1 > div{
+    vertical-align: middle;
+    padding: 20px;
+    color: white;
+    background-color: blue;
+}
+
+.palabra2 > div{
+    z-index: 100;
+    padding: 20px;
+    color: white;
+    background-color: black;
+    transition: transform 0.7s ease;
+}
+
+
+
+.palabra2> div:nth-child(even){
+    transform: translateY(-116px);
+}
+
+.palabra1:hover ~ .palabra2>:nth-child(even){
+    transform: translateY(-58px);
+}
+.palabra1:hover ~ .palabra2>:nth-child(odd){
+    transform: translateY(-58px);
+}
