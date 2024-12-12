@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.input {
+    margin: 20px;
+}
+
+input:checked + p{
+    color: red;
+    opacity: 0.1;
+    background-color: red;
+    outline: 1px solid red;
+}
+

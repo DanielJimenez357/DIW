@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    position: absolute;
+}
+.palabra{
+    cursor: pointer;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(2, 50px);
+}
+
+.palabra2{
+    grid-row: 2;
+}
+
+.palabra1 > p{
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.palabra2 > p{
+    padding: 10px;
+    background-color: white;
+}
+
+.palabra > div{
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+}
+
+.palabra2:hover + .palabra1 > p:nth-child(odd){
+    transform: translateY(50px);
+    transition: all 0.5s linear;
+}
+.palabra2:hover + .palabra1 > p:nth-child(even){
+    transform: translateY(50px);
+    transition: all 0.5s linear;
+}
+
+.palabra1 p:nth-child(even){
+    transform: translateY(100px);
+}
+
+
+
