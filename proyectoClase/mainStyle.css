@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(assets/fonts/BebasNeue.otf);
+}
+
+@font-face {
+    font-family: symbol;
+    src: url(assets/web-symbols/WebSymbols-Regular.otf);
+}
+@font-face {
+    font-family: Trebuchet;
+    src: url(assets/fonts/TrebuchetMS.ttf);
+}
+
+body{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/pattern.png);
+}
+
+.main{
+    margin: 1vw 5vw;
+    width: 80%;
+    margin: 2%;
+}
+
+.main__title{
+    position: relative;
+    width: 100%;
+    background-color: white;
+    height: 9vw;
+    padding: 0.8vw;
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(214, 214, 214);
+    border-radius: 5px;
+    align-items: center;
+}
+
+.main__title__img{
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    overflow: hidden;
+}
+
+.main__title__img > img {
+    top: 0;
+    left: 0;
+    animation: fondo 4s linear forwards;
+
+}
+
+.main__title > p{
+
+    font-size: 2.5vw;
+    position: absolute;
+    color: white;
+    font-family: BebasNeue;
+}
+
+@keyframes fondo {
+    from{ 
+        transform: translateX(0vw);
+
+    }
+    to{
+        transform: translateX(-1vw);
+        transform: scale(1.2);
+        transform: translateY(-10vw);
+    }
+} 
+
+/*seccion main__cursos*/
+
+.main__cursos{
+    margin: 5vw 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main__cursos__curso{
+    overflow: hidden;
+    font-size: 1vw;
+    font-family: Trebuchet;
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vw;
+    width: 13vw;
+    border: 2px solid rgb(214, 214, 214);
+    background-color: white;
+    padding: 1vw;
+    text-align: center;
+}
+
+.main__cursos__curso p:nth-child(1){
+    font-family: symbol;
+    font-size: 4vw;
+}
+
+.main__cursos__curso > p{
+    margin: 1vw 0;
+}
+
+.main__cursos__curso h3{
+    font-size: 1.2vw;
+    color: rgb(21, 97, 163);
+}
+
+.main__cursos__curso > p:nth-child(3){
+    color: rgb(21, 97, 163);
+}
+
+.main__cursos__curso:hover{
+    background-color: black;
+}
+
+.main__cursos__curso:hover > p:nth-child(1){
+    color: rgb(21, 97, 163);
+    animation: moverIcon 1s ease forwards;
+}
+
+.main__cursos__curso:hover > h3{
+    color: white;
+    animation: moverH3 0.8s ease forwards;
+
+}
+
+.main__cursos__curso:hover > p:nth-child(3){
+    color: white;
+    animation: moverP 1s ease forwards;
+
+}
+
+
+@keyframes moverIcon{
+    from{
+        transform: translateY(-10vw);
+    }
+    to{
+        transform: translateY(0vw);
+    }  
+    
+}
+@keyframes moverH3{
+    from{
+        transform: translateY(-10vw);
+    }
+    to{
+        transform: translateY(0vw);
+    }  
+    
+}
+@keyframes moverP{
+    from{
+        transform: translateX(-10vw);
+    }
+    to{
+        transform: translateX(0vw);
+    }  
+    
+}
+
+
+
+
+
+
+/*seccion articulos*/
+
+.articulos-aside{
+    position: relative;
+    background-color: aqua;
+    font-family: Trebuchet;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.articulos{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.articulos__title{
+    font-family: BebasNeue;
+    font-size: 1.8vw;
+    padding: 1.3vw;
+    text-align: center;
+    background-image: url(assets/pxgray.png);
+    box-shadow: 2px 2px 0px 2px black;
+}
+
+.articulos__article{
+    position: relative;
+    background-color: purple;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 1vw;
+}
+
+.articulos__article__date{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    padding: .7vw;
+    border-bottom-left-radius: 8px;
+}

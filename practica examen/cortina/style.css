@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    background-color: aqua;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 90%;
+    background-color: aquamarine;
+}
+
+.container__img{
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+    width: 30%;
+    height: 30%;
+}
+
+.container__img >a >img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.container__img > a > div {
+    top: 0;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    transform: translate(0,100%);
+    background-color: rgba(100, 34, 234, 0.5);
+}
+
+.container__img > a:hover > div{
+    transition: all 1s ease;
+    transform: translate(0);
+}
+
+#ventana{
+    z-index: 100;
+    transform: scale(0);
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100;
+    height: 100%;
+    transition: all 1s ease;
+    background-color: rgba(23, 134, 0, 0.5);
+}
+
+#ventana > img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#ventana > a{
+    position: absolute;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    background-color: red;
+}
+
+#ventana:target{
+    transform: scale(1);
+}
+
+
+@media (max-width: 1000px){
+    .container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}

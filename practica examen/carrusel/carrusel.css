@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carrusel{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    perspective: 1000px;
+}
+
+.carrusel-img{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-carrusel figure:nth-child(1){
+    transform: rotateX(0deg) translateZ(300px);
+}
+
+.carrusel img{
+    width: 100px;
+    height: 100px;
+}
+
+.carrusel > figure{
+    transform-style: preserve-3d;
+}
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0) ;
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}

@@ -1,0 +1,88 @@
+:root{
+    --color-azul: rgb(11, 141, 255);
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(assets/fonts/BebasNeue.otf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    font-family: BebasNeue;
+    position: relative;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav > ul{
+    margin: auto 6vw;
+}
+
+.header__nav__square{
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    background-color: var(--color-azul);
+    font-size: 2.5vw;
+    margin: 0.5vw 6vw;
+    width: 11vw;
+}
+
+.header__nav__square > img{
+    animation: girarEje 3s ;
+    animation: girar 3s   ;
+    height: 2.5vw;
+}
+
+.header__nav__square{
+    display: flex;
+    align-items: center;
+}
+
+.header__nav__square > img,h2{
+    margin: 0 1vw;
+}
+
+.header__nav__lista{
+    list-style: none;
+    display: flex;
+}
+
+.header__nav__lista > li{
+    margin: 0 1.6vw;
+    font-size: 1.5vw;
+}
+
+
+@keyframes girar {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes girarEje {
+    from {
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+
+
