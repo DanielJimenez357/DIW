@@ -13,7 +13,9 @@
     <header class="header">
         <nav class="header__nav">
             <div class="header__nav__square">
-                <img src="assets/silueta-de-rueda-dentada.png" alt="icono rueda">
+                <div>
+                    <img src="assets/silueta-de-rueda-dentada.png" alt="icono rueda">
+                </div>
                 <p>Blog</p>
             </div>
             <ul class="header__nav__lista">
@@ -138,40 +140,53 @@
                     <p>Fecha: 12 dic Categoria: Pruebas</p>
                 </div>
             </article>
+
+            <button class="articulos__boton">Ir al blog</button>
+
+            
         </section>
             <aside class="aside">
                 <div class="aside__section">
                     <h2>Buscar</h2>
                     <div class="aside__section__content">
-                        <input type="text">
+                        <input id="texto" type="text">
+                        <label for="texto">L</label>
                     </div>
                 </div>
                 <div class="aside__section">
                     <h2>Login</h2>
                     <div class="aside__section__content">
                         <form>
-                            <input type="text">
-                            <input type="text">
-                            <button>Entrar</button>
-                            <button>Limpiar</button>
+                            <div>
+                                <span>U</span>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <span>w</span>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <button>Entrar</button>
+                                <button>Limpiar</button>
+                            </div>
                             <a href="#">Resgistrate aquí</a>
                             <a href="#">¿Has olvidado tu contraseña?</a>
                         </form>
                     </div>
                 </div>
-                <div class="aside__section">
+                <div class="aside__section redes">
                     <h2>Redes sociales</h2>
                     <div class="aside__section__content">
                         <div class="aside__section__content__social1">
-                            <img src="" alt="icono red social">
+                            <span>t</span>
                             <p>Twitter</p>
                         </div>
                         <div class="aside__section__content__social2">
-                            <img src="" alt="icono red social">
+                            <span>f</span>
                             <p>Facebook</p>
                         </div>
                         <div class="aside__section__content__social3">
-                            <img src="" alt="icono red social">
+                            <span>y</span>
                             <p>YouTube</p>
                         </div>
                     </div>
@@ -183,44 +198,43 @@
                     </div>
                 </div>
             </aside>
-            
-            
-            <div class="toBlog">
-                <a>Ir al blog</a>
         </div>
     </section>
 
     </main>
     <footer class="footer">
         <section class="footer__menu">
+            <p>Menu</p>
             <ul>
-                <li>Inicio</li>
-                <li>Blog</li>
-                <li>Formacion</li>
-                <li>Contacto</li>
+                <li><p>Inicio</p/></li>
+                <li><p>Blog</p></li>
+                <li><p>Formacionp</p></li>
+                <li><p>Contacto</p></li>
             </ul>
         </section>
         <section class="footer__mapa">
-            <img src="" alt="mapa">
+            <p>¿Dónde estamos?</p>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345096875!2d144.95373531590455!3d-37.81627937975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xfb9d94d75917c09d!2sMelbourne!5e0!3m2!1sen!2sus!4v1614154394795!5m2!1sen!2sus"></iframe>
         </section>
         <section class="footer__info">
             <div class="footer__info__element">
-                <h2>Desarrollado con</h2>
-                <img>
+                <p>Desarrollado con</p>
+                <img src="assets/html5-badge-h-css3-graphics-multimedia-performance-semantics.png" alt="">
             </div>
             <div class="footer__info__element">
-                <h2>Optimizado para</h2>
+                <p>Optimizado para</p>
                 <div class="footer__info__element__imgs">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <img src="assets/firefox-icon.png" alt="">
+                    <img src="assets/chrome.png" alt="">
+                    <img src="assets/Opera_256x256.png" alt="">
+                    <img src="assets/android.png" alt="">
+                    <img src="assets/ios.png" alt="">
                 </div>
+                <p>Autor</p>
             </div>
-            <div class="footer__info__element">
-                <h2>Autor</h2>
-                <p>Daniel Jimenez WEB-danieljimenezweb.es</p>
+            <div class="footer__info__credits">
+                <p><span>&#169; </span>Daniel Jimenez WEB-danieljimenezweb.es</p>
             </div>
         </section>
     </footer>

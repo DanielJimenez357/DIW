@@ -41,9 +41,13 @@
     width: 11vw;
 }
 
-.header__nav__square > img{
-    animation: girar 10s infinite, girarEje 3s infinite;
-    height: 2.5vw;
+.header__nav__square > div {
+    animation: girarEje 3s linear infinite;
+}
+
+.header__nav__square  img{
+    animation: girar 3s linear infinite;
+    height: 1vw;
 }
 
 .header__nav__square{
@@ -51,7 +55,7 @@
     align-items: center;
 }
 
-.header__nav__square > img,h2{
+.header__nav__square img{
     margin: 0 1vw;
 }
 
@@ -75,18 +79,18 @@
 
 @keyframes girar {
     from {
-        transform: rotateZ(0deg);
+        transform: rotate(0deg);
     }
     to{
-        transform: rotateZ(360deg);
+        transform: rotate(360deg);
     }
 }
 @keyframes girarEje {
     from {
-        transform: rotateY(0deg);
+        transform: rotate(0deg);
     }
     to{
-        transform: rotateY(360deg);
+        transform: rotate(360deg);
     }
 }
 
