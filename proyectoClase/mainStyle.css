@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -204,7 +205,7 @@ body{
     margin-bottom: 20px;
     text-align: center;
     background-color: rgb(235, 229, 229);
-    box-shadow: 2px 2px 0px 2px rgb(86, 84, 84);
+    box-shadow: 4px 4px 0px .3px rgb(86, 84, 84);
 }
 
 .articulos__article{
@@ -304,20 +305,43 @@ body{
 
 .aside__section > h2 {
     background-color: rgb(235, 229, 229);
-    box-shadow: 2px 2px 0px 2px rgb(86, 84, 84);
+    box-shadow: 3px 3px 0px .5px rgb(86, 84, 84);
     margin: 0;
 } 
+
+.aside__section__content > label{
+    background-color: white;
+    font-family: symbol;
+}
 
 .aside__section__content{
     margin: 1vw;
     display: flex;
     padding: 1vw .4vw;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    background-color: white;
     margin: 1vw;
-    box-shadow: 0 0 5px 1px gray;
+}
+
+.aside > div:nth-child(1) > div{
+    border: solid 1px gray;
+    box-shadow: 0 0 1px 1px ;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.aside > div:nth-child(1) > div > input {
+    border-radius: 5px;    
+    border: none;
+}
+
+.aside > div:nth-child(1) > div > input:focus{
+    border: none;
+}
+
+.aside > div:nth-child(1) > div > label {
+    border-left: 1px solid gray;
 }
 
 .aside__section > div:nth-child(1){
@@ -325,30 +349,313 @@ body{
 }
 
 
+
+.aside > div:nth-child(2) > div {
+    background-color: white;
+    border: solid 1px gray;
+    box-shadow: 0 0 5px 1px rgb(216, 216, 216) ;
+}
+
+.aside > div:nth-child(2) > div >form > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px gray;
+}
+
+.aside > div:nth-child(2) > div >form > div > input {
+    border: none;
+}
+
+
+.aside > div:nth-child(2) > div >form span {
+    font-family: symbol;
+}
+
+.aside > div:nth-child(2) > div > form > div:nth-child(3) {
+    padding: 1vw;
+    border: none;
+    justify-content: space-around;
+}
+
+.aside > div:nth-child(2) > div > form > div:nth-child(3) > button{
+    border: 1px solid rgb(0, 89, 255);
+    background-color: rgb(0, 140, 255);
+    color: white;
+    cursor: pointer;
+    padding: .5vw 1vw;
+}
+
+.aside > div:nth-child(2) > div > form > a {
+    font-family: Trebuchet;
+    font-size: .8vw;
+    color: gray;
+    text-decoration: none;
+}
+
+.aside > div:nth-child(2) > div > form > a:hover {
+    text-decoration: underline;
+}
+
+
+
+.redes > .aside__section__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.redes > .aside__section__content > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.redes > .aside__section__content > div >  span {
+    font-family: symbol;
+}
+.redes > .aside__section__content > div >  p {
+    display: none;
+    animation: movimientoP 1s ease;    
+}
+
+.redes > .aside__section__content > div > span:hover ~ p{
+    display: block;
+}
+
+@keyframes movimientoP {
+    from {
+        transform: translateX(0);
+
+    } 
+    to {
+        transform: translateX(3vw);
+
+    }
+}
+
+
+
 /*Footer*/
 
 .footer{
+    height: 25vw;
     width: 100%;
-    background-color: gray;
+    background-color: black;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+
+.footer > section{
+    height: 10vw;
+    margin: 2vw;
 }
 
 .footer > section > p {
     font-family: BebasNeue;
     color: black;
+    font-size: 1.8vw;
     text-align: center;
-    background-color: gray;
+    background-color: white;
     padding: .4vw 4vw;
+    border-radius: 5px;
+    margin-bottom: .4vw;
+}
+
+
+
+.footer__menu > ul > li{
+    height: 2vw;
+    text-transform: uppercase;
+    font-family: Trebuchet;
+    color: rgb(3, 111, 235);
+    border-bottom: 1px white solid;
+}
+
+.footer__menu > ul > li > p  {
+    margin-top: .8vw;
+    transition: transform .4s ease;
+
+}
+
+.footer__menu > ul > li:hover > p{
+    color: white;
+    transform: translateX(2vw);
+}
+
+
+.footer__mapa > iframe{
+    width: 20vw;
+    height: 18vw;
     border-radius: 5px;
 }
 
 
-.footer__menu > ul > p{
-    color: blue;
-    transition: transform .4s ease;
+
+
+.footer__info__element > p{
+    width: 100%;
+    font-family: BebasNeue;
+    color: black;
+    font-size: 1.8vw;
+    text-align: center;
+    background-color: white;
+    padding: .4vw 4vw;
+    border-radius: 5px;
+    margin-bottom: .4vw;
 }
 
-.footer__menu > ul > p:hover{
-    transform: translateX(2vw);
+.footer__info__element__imgs {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__info__element__imgs > img{
+    height: 2.5vw;
+}
+
+
+.footer__info > div:nth-child(1) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__info > div:nth-child(1) > img {
+    height: 4.5vw;
+    width: 17vw;
+}
+
+.footer__info__credits{
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 2%;
+    }
+
+    .header__nav__square {
+        font-size: 4vw;
+        width: 15vw;
+    }
+
+    .header__nav__lista > li {
+        font-size: 2vw;
+        padding: 0vw 1vw;
+    }
+
+    .main {
+        margin: 1vw;
+        width: 90%;
+    }
+
+    .main__title {
+        height: 20vw;
+        padding: 1vw;
+        flex-direction: column;
+    }
+
+    .main__cursos {
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .main__cursos__curso {
+        width: 90%;
+        height: auto;
+        padding: 2vw;
+    }
+
+    .articulos-aside {
+        flex-direction: column;
+    }
+
+    .articulos {
+        width: 100%;
+    }
+
+    .aside {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__nav {
+        flex-direction: column;
+        gap: 1vw;
+    }
+
+    .header__nav__square {
+        font-size: 5vw;
+        width: auto;
+    }
+
+    .header__nav__lista > li {
+        font-size: 3vw;
+        margin: 0.5vw 0;
+    }
+
+    .main {
+        margin: 0;
+        width: 100%;
+    }
+
+    .main__title {
+        text-align: center;
+    }
+
+    .main__cursos {
+        flex-direction: column;
+        gap: 1vw;
+    }
+
+    .main__cursos__curso {
+        width: 100%;
+        padding: 5vw;
+        font-size: 3vw;
+    }
+
+    .articulos__title {
+        font-size: 4vw;
+    }
+
+    .articulos__article {
+        font-size: 3vw;
+    }
+
+    .footer {
+        position: relative;
+        height: 30vh;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer > * {
+        width: 50%;
+    }
+
+
+    .footer__mapa > iframe {
+        width: 90%;
+        height: auto;
+    }
+
+    .footer__menu > ul > li {
+        font-size: 3vw;
+        height: auto;
+    }
+
+    .footer__info__element > p {
+        font-size: 3vw;
+    }
 }
