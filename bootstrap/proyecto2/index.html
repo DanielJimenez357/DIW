@@ -1,55 +1,205 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Red Social</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-  </head>
-  <body>
+</head>
+
+<body class="vh-100 bg-terciary">
 
 
     <nav>
-        <div class="navbar bg-body-tertiary ">
-            <div class="d-flex">
-                <i class="bi bi-bootstrap-fill"></i>
-                <div class="d-flex bg-body-secondary">
-                    <i class="bi bi-search"></i>
-                    <p>hola</p>
-
+        <div class="navbar bg-primary align-items-center bg-primary d-flex justify-content-between row">
+            <div class="d-flex ms-3 col-2 col-lg-2 col-md-8 order-lg-1 order-md-1">
+                <i class="bi bi-bootstrap-fill text-primary fs-1 me-5"></i>
+                <div class="d-md-flex d-none bg-secondary h-25 rounded-pill align-items-left align-items-center w-100">
+                    <i class="text-primary h-25 bi bi-search mx-2"></i>
+                    <p class="text-primary h-25 mx-2">Buscar</p>
                 </div>
             </div>
 
-            <div class="">
-                <i class="bi bi-house-door-fill"></i>
-                <i class="bi bi-flag"></i>
-                <i class="bi bi-play-btn"></i>
-                <i class="bi bi-shop"></i>
-                <i class="bi bi-people"></i>
+            <div class="justify-content-around d-flex col-lg-4 order-md-3 order-3">
+                <i class="bi fs-4 mx-md-5 text-primary bi-house-door-fill text-info border-bottom border-2 border-info"></i>
+                <i class="bi fs-4 mx-md-5 text-primary bi-flag"></i>
+                <i class="bi fs-4 mx-md-5 text-primary bi-play-btn"></i>
+                <i class="bi fs-4 mx-md-5 text-primary bi-shop"></i>
+                <i class="bi fs-4 mx-md-5 text-primary bi-people"></i>
             </div>
 
 
-            <div class="">
-                <img src="" alt="">
-                <p>Daniel</p>
-                <div class="">
-                    <i class="bi bi-microsoft"></i>
+            <div class="d-flex text-primary me-3 align-items-center col-7 col-lg-2 col-md-3 order-lg-3 order-md-2">
+                <img class="miImagen rounded-circle" src="./assets/1864509.png" alt="">
+                <p class="mx-1">Daniel</p>
+                <div class="bg-secondary rounded-circle p-2 mx-1">
+                    <i class="bi text-primary p-1 bi-microsoft"></i>
                 </div>
-                <div class="">
-                    <i class="bi bi-chat-fill"></i>
+                <div class="bg-secondary rounded-circle p-2 mx-1">
+                    <i class="bi text-primary p-1 bi-chat-fill"></i>
                 </div>
-                <div class="">
-                    <i class="bi bi-bell-fill"></i>
+                <div class="bg-secondary rounded-circle p-2 mx-1">
+                    <i class="bi text-primary p-1 bi-bell-fill"></i>
                 </div>
             </div>
         </div>
+        </div>
     </nav>
 
+    <main class="container-fluid mt-4">
+        <div class="row justify-content-between">
+
+            <div class="d-flex flex-column d-none col-2 d-sm-none d-lg-block">
+                <div>
+                    <ul>
+                        <li class="text-white mb-3"><img class="me-4 miImagen rounded-circle"
+                                src="./assets/1864509.png">Daniel</li>
+                        <li class="text-white mb-3"><i class="me-4  fs-4 bi bi-people-fill"></i>Amigos</li>
+                        <li class="text-white mb-3"><i class="me-4  fs-4 bi bi-flag-fill"></i>Páginas</li>
+                        <li class="text-white mb-3"><i class="me-4  fs-4 bi bi-collection-fill"></i>Grupos</li>
+                        <li class="text-white mb-3"><i class="me-4  fs-4 bi bi-bag-fill"></i>Marketplace</li>
+                        <li class="text-white mb-3"><i class="me-4  fs-4 bi bi-tv-fill"></i>Watch</li>
+                        <li class="text-white mb-5"><i class="me-4  fs-4 bi bi-calendar-event-fill"></i>Eventos</li>
+                    </ul>
+                    <div class="text-secondary ">
+                        <span>Privacidad</span>
+                        <span>Condiciones</span>
+                        <span>Publicidad</span>
+                        <span>Opciones de anuncios</span>
+                        <span>Cookies</span>
+                        <span>Más</span>
+                    </div>
+                </div>
+            </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+
+            <div class="col-lg-3 col-md-12 mx-lg-0">
+            <div>
+                <div class="flex-column  rounded p-2 bg-primary h-25 rounded">
+                    <div class="d-flex align-items-center">
+                        <img class="me-4 miImagen rounded-circle my-1" src="./assets/1864509.png">
+                        <div
+                            class="d-flex bg-secondary py-0 px-1 rounded-pill align-items-left align-items-center w-100">
+                            <i class="text-primary align-middle bi bi-search mx-2"></i>
+                            <hr>
+                            <p class="text-primary mx-2 ">¿Que estas pensando Daniel?</p>
+                        </div>
+                    </div>
+                    <div>
+                        <hr class="text-primary">
+                        <ul class="d-flex justify-content-around text-primary">
+                            <li><i class="bi bi-camera-video-fill"></i> Video</li>
+                            <li><i class="bi bi-image"></i> Foto</li>
+                            <li><i class="bi bi-emoji-smile-fill"></i> Sentimiento</li>
+                        </ul>
+                    </div>
+                </div>
+
+                    <div class="flex-column bg-primary mt-5 rounded p-2">
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/1864509.png" alt="" class="miImagen rounded-circle mb-2">
+                            <div class="d-flex flex-column mx-2">
+                                <span class="text-primary">Stephanie Doe</span>
+                                <span class="text-secondary">1hr</span>
+                            </div>
+                        </div>
+                        <span class="text-primary">Lorem ipsum dolor sit amet</span>
+
+
+                        <img src="./assets/paisaje.jpeg" class="w-100 rounded mt-1" alt="">
+
+                        <div>
+                            <div class="d-flex mt-2 justify-content-between mx-2">
+                                <div> 
+                                    <i class="bi bi-suit-heart-fill text-danger"></i>
+                                    <span class="text-primary"> 60</span>
+                                </div>
+                                <div>
+                                    <span class="text-primary">7 comentarios</span>
+                                </div>
+                            </div>
+                            <div class="text-primary d-flex justify-content-around mt-3">
+                                <div>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <span> Me gusta</span>
+                                </div>
+                                <div>
+                                    <i class="bi bi-chat-left"></i>
+                                    <span> Comentar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-column bg-primary mt-5 rounded p-2">
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/1864509.png" alt="" class="miImagen rounded-circle mb-2">
+                            <div class="d-flex flex-column mx-2">
+                                <span class="text-primary">Cesar Doe</span>
+                                <span class="text-secondary">2hr</span>
+                            </div>
+                        </div>
+                        <span class="text-primary">Lorem ipsum dolor sit amet</span>
+
+
+                        <img src="./assets/paisaje.jpeg" class="w-100 rounded mt-1" alt="">
+
+                        <div>
+                            <div class="d-flex mt-2 justify-content-between mx-2">
+                                <div> 
+                                    <i class="bi bi-suit-heart-fill text-danger"></i>
+                                    <span class="text-primary"> 60</span>
+                                </div>
+                                <div>
+                                    <span class="text-primary">11 comentarios</span>
+                                </div>
+                            </div>
+                            <div class="text-primary d-flex justify-content-around mt-3">
+                                <div>
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    <span> Me gusta</span>
+                                </div>
+                                <div>
+                                    <i class="bi bi-chat-left"></i>
+                                    <span> Comentar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2 d-none d-sm-none d-lg-block">
+                <h3 class="text-primary">Publicidad</h3>
+                <img src="./assets/tablet.jpeg" alt="" class="img-fluid rounded mb-2">
+                <img src="./assets/concierto.avif" alt="" class="img-fluid rounded mb-3">
+                <h3 class="text-primary">Contactos</h3>
+                <ul>
+                    <li class="text-white"><img class="me-4 miImagen rounded-circle my-1"
+                            src="./assets/1864509.png">Alejandro Doe</li>
+                    <li class="text-white"><img class="me-4 miImagen rounded-circle my-1"
+                            src="./assets/1864509.png">Stephanie Doe</li>
+                    <li class="text-white"><img class="me-4 miImagen rounded-circle my-1"
+                            src="./assets/1864509.png">Cesar Doe</li>
+                    <li class="text-white"><img class="me-4 miImagen rounded-circle my-1"
+                            src="./assets/1864509.png">Manuel Doe</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

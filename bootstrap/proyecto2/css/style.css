@@ -1,0 +1,14 @@
+li {
+    list-style: none;
+}
+
+.miImagen{
+    width: 4vh;
+    background-color: steelblue;
+    height: 4vh;
+}
+
+.navegacion{
+    height: 3vw;
+}
+
